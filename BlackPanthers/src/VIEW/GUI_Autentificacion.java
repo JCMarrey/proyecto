@@ -256,7 +256,7 @@ public class GUI_Autentificacion extends javax.swing.JFrame {
     public static void main(String args[]) {
 
         /* Create and display the form */
-        new GUI_Autentificacion().setVisible(true);
+        //new GUI_Autentificacion().setVisible(true);
         
     }
 

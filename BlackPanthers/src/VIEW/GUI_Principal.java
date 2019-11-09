@@ -116,8 +116,10 @@ public class GUI_Principal extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         
 
-            new GUI_Autentificacion().setVisible(true);
-           // new GUI_Principal().setVisible(true);
+           // new GUI_Autentificacion().setVisible(true);
+           
+           
+           new GUI_RegistroAdmin().setVisible(true);
 
 
 //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -146,7 +148,7 @@ public class GUI_Principal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new GUI_Principal().setVisible(true);
+             //   new GUI_Principal().setVisible(true);
             }
         });
     }
