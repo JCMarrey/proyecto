@@ -38,6 +38,7 @@ public class GUI_Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("BLACK PANTHERS GYM");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -64,12 +65,22 @@ public class GUI_Principal extends javax.swing.JFrame {
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
         jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 50, 40));
 
         jButton6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jButton6.setText("Productos");
         jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 110, 30));
 
         jButton7.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
@@ -109,6 +120,14 @@ public class GUI_Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -116,10 +135,10 @@ public class GUI_Principal extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         
 
-           // new GUI_Autentificacion().setVisible(true);
+          //new GUI_Autentificacion().setVisible(true);
            
            
-           new GUI_RegistroAdmin().setVisible(true);
+           //new GUI_RegistroAdmin().setVisible(true);
 
 
 //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -148,7 +167,7 @@ public class GUI_Principal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-             //   new GUI_Principal().setVisible(true);
+                new GUI_Principal().setVisible(true);
             }
         });
     }
