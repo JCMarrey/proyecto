@@ -30,10 +30,8 @@ public class GUI_Inventario extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,19 +52,15 @@ public class GUI_Inventario extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(60, 170, 208, 32);
+        jButton1.setBounds(80, 170, 208, 32);
 
         jButton3.setText("Buscar Productos");
         jPanel1.add(jButton3);
-        jButton3.setBounds(60, 260, 208, 32);
-
-        jButton4.setText("Eliminar Producto");
-        jPanel1.add(jButton4);
-        jButton4.setBounds(380, 260, 208, 37);
+        jButton3.setBounds(350, 170, 208, 32);
 
         jButton5.setText("Regresar");
         jPanel1.add(jButton5);
-        jButton5.setBounds(220, 350, 208, 35);
+        jButton5.setBounds(220, 250, 208, 35);
 
         jLabel1.setBackground(new java.awt.Color(255, 0, 51));
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
@@ -74,10 +68,6 @@ public class GUI_Inventario extends javax.swing.JFrame {
         jLabel1.setText("Administrar Inventario");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(210, 30, 258, 57);
-
-        jButton2.setText("Modificar Producto");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(380, 170, 208, 32);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Fondo_Inventario.jpg"))); // NOI18N
@@ -136,9 +126,7 @@ public class GUI_Inventario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
