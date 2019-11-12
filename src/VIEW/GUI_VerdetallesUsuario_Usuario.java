@@ -177,6 +177,8 @@ public class GUI_VerdetallesUsuario_Usuario extends javax.swing.JFrame {
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 180, 20));
 
         jButton7.setText("Regresar");
+        jButton7.setBorderPainted(false);
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -186,6 +188,7 @@ public class GUI_VerdetallesUsuario_Usuario extends javax.swing.JFrame {
 
         jButton8.setBackground(new java.awt.Color(255, 0, 0));
         jButton8.setText("Eliminar");
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -194,6 +197,7 @@ public class GUI_VerdetallesUsuario_Usuario extends javax.swing.JFrame {
         jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, 90, 30));
 
         jButton6.setText("Modificar");
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -202,6 +206,7 @@ public class GUI_VerdetallesUsuario_Usuario extends javax.swing.JFrame {
         jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, 90, 30));
 
         jButton5.setText("Salir");
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
