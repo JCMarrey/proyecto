@@ -4,6 +4,7 @@
  * and open the templatewww in the editor.
  */
 package VIEW;
+import CONTROLLER.OInventario;
 
 /**
  *
@@ -16,6 +17,8 @@ public class GUI_Inventario extends javax.swing.JFrame {
      */
     public GUI_Inventario() {
         initComponents();
+        OInventario Oyente = new OInventario(jButton1);
+        jButton1.addActionListener(Oyente);
     }
 
     /**
