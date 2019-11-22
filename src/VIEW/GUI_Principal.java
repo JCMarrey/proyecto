@@ -5,6 +5,8 @@
  */
 package VIEW;
 
+import CONTROLLER.OPrincipal;
+
 /**
  *
  * @author juanm
@@ -14,8 +16,18 @@ public class GUI_Principal extends javax.swing.JFrame {
     /**
      * Creates new form GUI_Principal
      */
+    
+    OPrincipal oyentePrincipal;
     public GUI_Principal() {
+        
         initComponents();
+        oyentePrincipal = new  OPrincipal(this,BTMembresias,BTProductos,BTEventos, BTRutinas,BTIIcono); //this para mandar toda la gui
+        BTMembresias.addActionListener(oyentePrincipal);
+        BTProductos.addActionListener(oyentePrincipal);
+        BTEventos.addActionListener(oyentePrincipal);
+        BTRutinas.addActionListener(oyentePrincipal);
+        BTIIcono.addActionListener(oyentePrincipal);
+        setLocationRelativeTo(null); //centrar el frame
     }
 
     /**
@@ -29,11 +41,11 @@ public class GUI_Principal extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        BTMembresias = new javax.swing.JButton();
+        BTIIcono = new javax.swing.JButton();
+        BTProductos = new javax.swing.JButton();
+        BTEventos = new javax.swing.JButton();
+        BTRutinas = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,54 +63,54 @@ public class GUI_Principal extends javax.swing.JFrame {
         });
         jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, 190, 30));
 
-        jButton2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jButton2.setText("Membresías");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BTMembresias.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        BTMembresias.setText("Membresías");
+        BTMembresias.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BTMembresias.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BTMembresias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BTMembresiasActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 110, 30));
+        jPanel2.add(BTMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 110, 30));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
-        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        BTIIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
+        BTIIcono.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        BTIIcono.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BTIIcono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                BTIIconoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 50, 40));
+        jPanel2.add(BTIIcono, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 50, 40));
 
-        jButton6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jButton6.setText("Productos");
-        jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        BTProductos.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        BTProductos.setText("Productos");
+        BTProductos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BTProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BTProductos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                BTProductosActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 110, 30));
+        jPanel2.add(BTProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 110, 30));
 
-        jButton7.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jButton7.setText("Eventos");
-        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.setFocusPainted(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        BTEventos.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        BTEventos.setText("Eventos");
+        BTEventos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BTEventos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BTEventos.setFocusPainted(false);
+        BTEventos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                BTEventosActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 110, 30));
+        jPanel2.add(BTEventos, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 110, 30));
 
-        jButton8.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jButton8.setText("Rutinas");
-        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, 110, 30));
+        BTRutinas.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        BTRutinas.setText("Rutinas");
+        BTRutinas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.add(BTRutinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, 110, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/gym.jpg"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 750));
@@ -112,34 +124,54 @@ public class GUI_Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BTMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTMembresiasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BTMembresiasActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void BTEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTEventosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_BTEventosActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void BTProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTProductosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_BTProductosActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void BTIIconoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTIIconoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_BTIIconoActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(GUI_AgregarProducto_G.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(GUI_AgregarProducto_G.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(GUI_AgregarProducto_G.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_AgregarProducto_G.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
 
-          //new GUI_Autentificacion().setVisible(true);
-           
-           
-           //new GUI_RegistroAdmin().setVisible(true);
-
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> {
+            new GUI_Principal().setVisible(true);
+        });
 
 //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -164,20 +196,17 @@ public class GUI_Principal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new GUI_Principal().setVisible(true);
-            }
-        });
+        
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton BTEventos;
+    private javax.swing.JButton BTIIcono;
+    private javax.swing.JButton BTMembresias;
+    private javax.swing.JButton BTProductos;
+    private javax.swing.JButton BTRutinas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;

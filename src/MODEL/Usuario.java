@@ -21,31 +21,27 @@ public class Usuario implements informacion {
     private String apellidoP;
     private String apellidoM;
     private int edad;
+    private String sex;
     private String correo;
     private String nombreU;
-    private String sex;
     private String paswordU;
     private String tipoU;
-    private double telefono;
     
     //private String tipoUsuario;
         
     public Usuario(){
         
     }
-    
-    public Usuario(String nombre,String apellidoP,String apellidoM,int edad,String correo,String nombreU,String sex,String passwordU,String tipoU,double telefono){
+    public Usuario(String nombre,String apellidoP,String apellidoM,int edad,String Sexo,String nombreU,String passwordU,String correo,String tipoU){
         this.nombre=nombre;
         this.apellidoP=apellidoP;
         this.apellidoM=apellidoM;
         this.edad=edad;
         this.correo=correo;
         this.nombreU=nombreU;
-        this.sex=sex;
         this.paswordU=passwordU;
         this.tipoU=tipoU;
-        this.telefono=telefono;
-        
+        this.sex=Sexo;
     }
 
     public String getNombre() {
@@ -96,14 +92,6 @@ public class Usuario implements informacion {
         this.nombreU = nombreU;
     }
 
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
     public String getPaswordU() {
         return paswordU;
     }
@@ -120,22 +108,21 @@ public class Usuario implements informacion {
         this.tipoU = tipoU;
     }
 
-    public double getTelefono() {
-        return telefono;
+    public String getSex() {
+        return sex;
     }
 
-    public void setTelefono(double telefono) {
-        this.telefono = telefono;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
-
     
   
     @Override
     public String informacion() {
          
         String info;
-        info="Nombre: " + nombre + "\nApellido Paterno: " + "\nApellido Materno: " + "\nEdad: " + "\nTelefóno: " + telefono + "\nCorreo electrónico: " + "Nombre Usuario: "  + nombreU 
-                + "\nSexo: " + sex + "Contraseña: " + paswordU;
+        info="Nombre: " + nombre + "\nApellido Paterno: " + "\nApellido Materno: " + "\nEdad: "  + "\nCorreo electrónico: " + "Nombre Usuario: "  + nombreU 
+              + "Contraseña: " + paswordU;
         return info;
     }
     

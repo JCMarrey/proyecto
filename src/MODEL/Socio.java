@@ -18,8 +18,8 @@ public class Socio extends Usuario{
     private Membresia membresia;
 
     
-     public Socio(String nombre,String apellidoP,String apellidoM,int edad,String correo,String nombreU,String sex,String passwordU,String tipoU,double telefono,float altura,int peso){ 
-        super(nombre,apellidoP, apellidoM,edad,correo, nombreU,sex, passwordU,tipoU,telefono);
+     public Socio(String nombre,String apellidoP,String apellidoM,int edad,String sexo,String correo,String nombreU,String sex,String passwordU,String tipoU,float altura,int peso){ 
+        super(nombre,apellidoP, apellidoM,edad,sexo,correo, nombreU, passwordU,tipoU);
         this.altura=altura;
         this.peso=peso;
         this.IMC=(float) ((float)this.peso/(Math.pow(this.altura,2)));

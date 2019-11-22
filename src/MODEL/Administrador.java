@@ -12,31 +12,20 @@ package MODEL;
  */
 public class Administrador extends Usuario {
     
-    private int numero;
+
     private String direccion;
+    private double telefono;
     
-     public Administrador (String nombre,String apellidoP,String apellidoM,int edad,String correo,String nombreU,String sex,String passwordU,String tipo,int numero, String direccion,long telefono){
-        super(nombre,apellidoP, apellidoM,edad,correo, nombreU,sex, passwordU,tipo,telefono);
-        this.numero=numero;
+     public Administrador (String nombre,String apellidoP,String apellidoM,int edad,String Sexo,String correo,String nombreU,String passwordU,String tipo, String direccion,double telefono){
+        super(nombre,apellidoP, apellidoM,edad,Sexo,correo, nombreU,passwordU,tipo);
         this.direccion=direccion;
-        
-        
-        
+        this.telefono=telefono;
     }
 
     public Administrador(){
         super();
     }
      
-     
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
     public String getDireccion() {
         return direccion;
     }
@@ -44,10 +33,17 @@ public class Administrador extends Usuario {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    public double getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(double telefono) {
+        this.telefono = telefono;
+    }
     
-   
     public void visualizaDatos(){
-        System.out.println("INFORMACIÓN ADMINISTRADO\n"+ super.informacion()  + "\nDirección: " + direccion + "\ntelefóno: " + numero);
+        System.out.println("INFORMACIÓN ADMINISTRADO\n"+ super.informacion()  + "\nDirección: " + direccion + "\ntelefóno: " + telefono);
     }
     
     public void modificarDatosUsuarios(){

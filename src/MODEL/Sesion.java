@@ -149,7 +149,7 @@ public class Sesion{
                         
                         
                                 if(respuesta==1){
-                                    gu.visualizaMenuAdministrativo();
+                                   // gu.visualizaMenuAdministrativo();
                                     
                                 }
                                 if(respuesta==2){
@@ -224,7 +224,7 @@ public class Sesion{
             rpasswordUsuario = reader.readLine();
         } while (passwordUsuario == null ? rpasswordUsuario != null : !passwordUsuario.equals(rpasswordUsuario));
         //PROCESO DE REGISTRO DE NUEVO USUARIO
-        nuevoUsuario = new Usuario(nombre,ApellidoP,ApellidoM,edadd,correo,nombreU,sex,passwordUsuario,tipoUsuario,telefono);   
+       // nuevoUsuario = new Usuario(nombre,ApellidoP,ApellidoM,edadd,correo,nombreU,sex,passwordUsuario,tipoUsuario,telefono);   
         
         //tablaUsuarios.agregaNuevoUsuario(nuevoUsuario);  HACER ONEXIÓN
         System.out.println("***** REGISTRO DE NUEVO USUARIO CONCLUIDO DE FORMA EXITOSA*****");
